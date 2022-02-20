@@ -3,6 +3,7 @@ import GithubProvider from "next-auth/providers/github";
 
 import { query as q } from "faunadb";
 import { fauna } from "../../../services/fauna";
+import { FaunaAdapter } from "@next-auth/fauna-adapter";
 
 export default NextAuth({
   providers: [
@@ -16,6 +17,8 @@ export default NextAuth({
       },
     }),
   ],
+
+  adapter: FaunaAdapter(fauna),
 
   secret: process.env.NEXT_AUTH_SECRET,
 
