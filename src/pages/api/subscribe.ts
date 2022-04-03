@@ -23,7 +23,6 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     if (!customerId) {
       const stripeCustomer = await stripe.customers.create({
         email: session.user.email,
-        // metadata
       });
 
       await fauna.query(
@@ -41,7 +40,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       billing_address_collection: "required",
       line_items: [
         {
-          price: "price_1H5XqQZqQZqQZqQZqQZqQZqQZqQ",
+          price: "price_1K5v7eERf7hKBgmIjpGuIjM1",
           quantity: 1,
         },
       ],
