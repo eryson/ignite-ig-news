@@ -1,0 +1,36 @@
+{
+  "id": "9cd55b98-9f45-46b1-a7be-cad8cc056116",
+  "uid": "possimus-quos-reiciendis",
+  "type": "ignews-post",
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Maximize killer schemas",
+        "spans": []
+      }
+    ],
+    "content": [
+      {
+        "type": "heading1",
+        "text": "Recontextualize B2B interfaces",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        },
+        "alt": "Placeholder image",
+        "copyright": null,
+        "url": "https://images.unsplash.com/photo-1587653915936-5623ea0b949a?w=900&h=500&fit=crop"
+      },
+      {
+        "type": "paragraph",
+        "text": "Elit culpa ea id pariatur excepteur labore Lorem magna irure voluptate.",
+        "spans": []
+      }
+    ]
+  }
+}
