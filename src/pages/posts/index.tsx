@@ -1,9 +1,8 @@
 /* eslint-disable react/jsx-key */
 import Head from "next/head";
-
-import { getPrismicClient } from "../../../prismicio";
 import Link from "next/link";
 
+import { getPrismicClient } from "../../../prismicio";
 import styles from "./styles.module.scss";
 
 type Post = {
