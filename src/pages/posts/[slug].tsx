@@ -18,7 +18,7 @@ export default function Post({ post }: PostProps) {
   return (
     <>
       <Head>
-        <title>{post.title} | news</title>
+        <title>{post.title} | Ignews</title>
       </Head>
 
       <main className={styles.container}>
@@ -52,8 +52,6 @@ export const getServerSideProps: GetServerSideProps = async ({
   } catch {
     return { redirect: { destination: "/", permanent: false } };
   }
-
-  console.log(response.data.content);
 
   const post = {
     slug,
