@@ -1,5 +1,82 @@
 {
   "slices": {
-    "components": {}
+    "components": {
+      "slice_test": {
+        "library": "slices",
+        "id": "slice_test",
+        "name": "SliceTest",
+        "description": "SliceTest",
+        "model": {
+          "id": "slice_test",
+          "type": "SharedSlice",
+          "name": "SliceTest",
+          "description": "SliceTest",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SliceTest",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "heading1",
+                    "label": "Title",
+                    "placeholder": "This is where it all begins..."
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "single": "paragraph",
+                    "label": "Description",
+                    "placeholder": "A nice description of your feature"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "slice_test",
+            "items": [],
+            "primary": {
+              "title": [
+                {
+                  "type": "heading1",
+                  "text": "Iterate end-to-end eyeballs",
+                  "spans": []
+                }
+              ],
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Voluptate cupidatat eu elit duis non sint adipisicing aliqua reprehenderit. Nostrud velit dolore reprehenderit consectetur quis consectetur id consequat ad proident sunt laborum velit incididunt aliquip.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {
+          "default": {
+            "path": "/home/eryson/Rocketseat/ignite-ig-news/.slicemachine/assets/slices/SliceTest/default/preview.png",
+            "width": 800,
+            "height": 80
+          }
+        }
+      }
+    }
   }
 }
