@@ -39,15 +39,15 @@ export const getServerSideProps: GetServerSideProps = async ({
   req,
   params,
 }) => {
-  const session = getSession({ req });
+  const session = await getSession({ req });
   const { slug } = params;
   const client = getPrismicClient(req);
-
   const response = await client.getByUID("ignews-post", String(slug), {});
+  const preview = `/posts/preview/${slug}`;
 
   try {
-    if (!(await session).activeSubscription) {
-      return { redirect: { destination: "/", permanent: false } };
+    if (!session?.activeSubscription) {
+      return { redirect: { destination: preview, permanent: false } };
     }
   } catch {
     return { redirect: { destination: "/", permanent: false } };
